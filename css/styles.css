@@ -11,3 +11,9 @@ author: bootply.com
 body {
   padding-top: 70px;
 }
+
+#play {
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
