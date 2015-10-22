@@ -38,3 +38,8 @@ body {
   width: 100px;
   height: 100px;
 }
+
+#score {
+  float: right;
+  font-weight: bold;
+}
