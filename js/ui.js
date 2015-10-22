@@ -6,5 +6,10 @@ $( document ).ready(function() {
   });
 
 
+  $( ".pic img" ).click(function() {
+  move = $(this).attr('id');
+  });
+
+
 
 }); //End of doc ready function

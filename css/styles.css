@@ -8,17 +8,19 @@ license: MIT
 author: bootply.com
 */
 
+/*navbar I assume: default css*/
 body {
   padding-top: 70px;
 }
 
-
+/*Play button in navbar*/
 #play {
   margin-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
 }
 
+/*Make images of RPS grow*/
 .grow img {
   float: left
   display: inline-block;

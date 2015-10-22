@@ -1,4 +1,5 @@
 'use strict';
+var move;
 
 // function getInput() {
 //     console.log("Please choose either 'rock', 'paper', or 'scissors'.")
