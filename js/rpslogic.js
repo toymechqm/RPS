@@ -1,9 +1,9 @@
 'use strict';
 
-function getInput() {
-    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
-    return prompt();
-}
+// function getInput() {
+//     console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+//     return prompt();
+// }
 function randomPlay() {
     var randomNumber = Math.random();
     if (randomNumber < 0.33) {
@@ -16,15 +16,20 @@ function randomPlay() {
 }
 
 function getPlayerMove(move) {
-    var move
-        if (move != null){
-            move = move;
-        }
-        else {
-            move = getInput();
-        }
-    return move
+    var move;
+    move = move;
 }
+
+// function getPlayerMove(move) {
+//     var move
+//         if (move != null){
+//             move = move;
+//         }
+//         else {
+//             move = getInput();
+//         }
+//     return move
+// }
 
 function getComputerMove(move) {
     var move
