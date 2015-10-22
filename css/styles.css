@@ -39,6 +39,7 @@ body {
   height: 100px;
 }
 
+/*Font styles fore the scoreboards on right of screen*/
 #score {
   float: right;
   font-weight: bold;

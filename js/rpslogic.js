@@ -77,31 +77,31 @@ function getComputerMove(move) {
 function getWinner(playerMove,computerMove) {
     var winner;
     if(playerMove == "rock" && computerMove == "paper"){
-        winner = "computer"
-        console.log("Computer wins!");
+        winner = "computer";
+        $('.pturns').html(parseInt($('.pturns').html(), 10)+1);
     }
     else if(playerMove == "paper" && computerMove == "rock"){
-        winner = "player"
-        console.log("Player wins!");
+        winner = "player";
+        $('.rturns').html(parseInt($('.rturns').html(), 10)+1);
     }
     else if(playerMove == "paper" && computerMove == "scissors"){
-        winner = "computer"
-        console.log("Computer wins!");
+        winner = "computer";
+        $('.sturns').html(parseInt($('.sturns').html(), 10)+1);
     }
     else if(playerMove == "scissors" && computerMove == "paper"){
-        winner = "player"
-        console.log("Player wins!");
+        winner = "player";
+        $('.pturns').html(parseInt($('.pturns').html(), 10)+1);
     }
     else if(playerMove == "scissors" && computerMove == "rock"){
-        winner = "computer"
-        console.log("Computer wins!");
+        winner = "computer";
+        $('.rturns').html(parseInt($('.rturns').html(), 10)+1);
     }
     else if(playerMove == "rock" && computerMove == "scissors"){
-        winner = "player"
-        console.log("Player wins!");
+        winner = "player";
+        $('.sturns').html(parseInt($('.sturns').html(), 10)+1);
     }
     else{
-        winner = "tie"
+        winner = "tie";
         console.log("It's a tie!");
     }
     return winner;
@@ -119,11 +119,14 @@ function playToFive() {
         if (winner == "player") {
         playerWins++;
             $('.humanwins').html(parseInt($('.humanwins').html(), 10)+1);
+            $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
         } else if (winner == "computer") {
             computerWins++;
             $('.computerwins').html(parseInt($('.computerwins').html(), 10)+1);
+            $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
         } else {
             $('.ties').html(parseInt($('.ties').html(), 10)+1);
+            $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
         }
 
    }
