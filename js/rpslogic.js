@@ -67,6 +67,16 @@ $( document ).ready(function() {
                  }
             }
             $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
+
+            // Need to pull integer out of
+            var text = $('.totalgames').text();
+            var total = parseInt(text, 10);
+
+            var text2 = $('.humanwins').text();
+            var hums = parseInt(text2, 10);
+            console.log(hums/total)
+            $('.average').html(parseFloat(hums/total, 10).toFixed(2));
+
         }
 
 
