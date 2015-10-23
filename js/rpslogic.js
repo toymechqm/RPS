@@ -58,8 +58,16 @@ $( document ).ready(function() {
         else{
             //Tie Game score counter
             $('.ties').html(parseInt($('.ties').html(), 10)+1);
+                if(computerMove === "rock") {
+                    $('.rturns').html(parseInt($('.rturns').html(), 10)+1);
+                } if(computerMove === "paper") {
+                    $('.pturns').html(parseInt($('.pturns').html(), 10)+1);
+                } if(computerMove === "scissors") {
+                    $('.sturns').html(parseInt($('.sturns').html(), 10)+1);
+                 }
+            }
+            $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
         }
-        $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
-    }
+
 
 });
