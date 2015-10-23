@@ -1,4 +1,5 @@
 var move;
+var total;
 
 function randomPlay() {
     var randomNumber = Math.random();
@@ -31,34 +32,34 @@ $( document ).ready(function() {
     function getWinner(playerMove,computerMove) {
         var winner;
         if(playerMove == "rock" && computerMove == "paper"){
-            winner = "computer";
+            $('.computerwins').html(parseInt($('.computerwins').html(), 10)+1);
             $('.pturns').html(parseInt($('.pturns').html(), 10)+1);
         }
         else if(playerMove == "paper" && computerMove == "rock"){
-            winner = "player";
+            $('.humanwins').html(parseInt($('.humanwins').html(), 10)+1);
             $('.rturns').html(parseInt($('.rturns').html(), 10)+1);
         }
         else if(playerMove == "paper" && computerMove == "scissors"){
-            winner = "computer";
+            $('.computerwins').html(parseInt($('.computerwins').html(), 10)+1);
             $('.sturns').html(parseInt($('.sturns').html(), 10)+1);
         }
         else if(playerMove == "scissors" && computerMove == "paper"){
-            winner = "player";
+            $('.humanwins').html(parseInt($('.humanwins').html(), 10)+1);
             $('.pturns').html(parseInt($('.pturns').html(), 10)+1);
         }
         else if(playerMove == "scissors" && computerMove == "rock"){
-            winner = "computer";
+            $('.computerwins').html(parseInt($('.computerwins').html(), 10)+1);
             $('.rturns').html(parseInt($('.rturns').html(), 10)+1);
         }
         else if(playerMove == "rock" && computerMove == "scissors"){
-            winner = "player";
+            $('.humanwins').html(parseInt($('.humanwins').html(), 10)+1);
             $('.sturns').html(parseInt($('.sturns').html(), 10)+1);
         }
         else{
-            winner = "tie";
+            //Tie Game score counter
             $('.ties').html(parseInt($('.ties').html(), 10)+1);
         }
-        return winner;
+        $('.totalgames').html(parseInt($('.totalgames').html(), 10)+1);
     }
 
 });

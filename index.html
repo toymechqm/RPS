@@ -86,18 +86,21 @@
           <div style="display: none" id="gameon">
             <center >
               <h1>Choose your move:</h1> <br>
+              <div class="row">
+                <div class="grow pic col-xs-4">
+                  <img src="rock.png" id="rock" alt="rock">
+                </div>
 
-              <div class="grow pic">
-                <img src="rock.png" id="rock" alt="rock">
-              </div>
-
-              <div class="grow pic">
-                <img src="paper.png" id="paper" alt="paper">
-              </div>
-              <div class="grow pic">
-                <img src="scissor.png" id="scissors" alt="scissors">
+                <div class="grow pic col-xs-4">
+                  <img src="paper.png" id="paper" alt="paper">
+                </div>
+                <div class="grow pic col-xs-4">
+                  <img src="scissor.png" id="scissors" alt="scissors">
+                </div>
               </div>
             </center>
+
+            <div class="clearfix"><br></div>
 
               <div class="jumbotron">
                 <h4>Computer Move: <span id="pcmove"> </span></h4>
@@ -131,6 +134,8 @@
               Tie Games: <span class="ties" id="score">0</span>
               <br>
               Total Games: <span class="totalgames" id="score">0</span>
+              <br>
+              Win Percentage: <span class="average" id="score">0</span>
               </div>
             </div>
       </div><!--/right-->
