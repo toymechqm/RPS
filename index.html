@@ -17,8 +17,8 @@
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
   </head>
+
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
@@ -80,24 +80,31 @@
               Click on the top right play button to begin battle against the A.I.
             </p>
             <p class="lead"><button class="btn btn-default">Read More</button></p>
-
           </div>
         </div>
 
-          <center style="display: none" id="gameon">
-            <h1>Choose your move:</h1> <br>
+          <div style="display: none" id="gameon">
+            <center >
+              <h1>Choose your move:</h1> <br>
 
-            <div class="grow pic">
-              <img src="rock.png" id="rock" alt="rock" height="75" width="75">
-            </div>
+              <div class="grow pic">
+                <img src="rock.png" id="rock" alt="rock">
+              </div>
 
-            <div class="grow pic">
-              <img src="paper.png" id="paper" alt="paper" height="75" width="75">
+              <div class="grow pic">
+                <img src="paper.png" id="paper" alt="paper">
+              </div>
+              <div class="grow pic">
+                <img src="scissor.png" id="scissors" alt="scissors">
+              </div>
+            </center>
+
+              <div class="jumbotron">
+                <h4>Computer Move: <span id="pcmove"> </span></h4>
+                <br>
+                <h4>Your Move: <span id="hummove"> </span></h4>
+              </div>
             </div>
-            <div class="grow pic">
-              <img src="scissor.png" id="scissors" alt="scissors" height="75" width="75">
-            </div>
-          </center>
 
       </div><!--/center-->
 

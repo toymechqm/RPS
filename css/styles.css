@@ -22,8 +22,7 @@ body {
 
 /*Make images of RPS grow*/
 .grow img {
-  float: left
-  display: inline-block;
+  position: relative;
   height: 75px;
   width: 75px;
 
@@ -39,8 +38,8 @@ body {
   height: 100px;
 }
 
-/*Font styles fore the scoreboards on right of screen*/
-#score {
+/*Font styles for the scoreboards on right of screen*/
+#pcmove, #hummove, #score {
   float: right;
   font-weight: bold;
 }
